@@ -1,0 +1,24 @@
+# 依赖
+node_modules/
+.pnpm-store/
+
+# 构建产物
+dist/
+dist_electron/
+release/
+*.timestamp-*.mjs
+
+# 日志与临时文件
+*.log
+.workbuddy-run.log
+.workbuddy-smoke.log
+st.log
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 本地数据（用户自己的配置与统计，不入库）
+*.local.json
