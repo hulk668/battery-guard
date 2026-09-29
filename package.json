@@ -2,16 +2,20 @@
   "name": "battery-guard",
   "version": "1.0.0",
   "description": "Windows 电池守护 - 充电阈值提醒与电池健康监控",
+  "author": "Battery Guard Contributors",
+  "license": "MIT",
   "main": "electron/main.cjs",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "icon": "node scripts/make-icon.cjs",
     "start": "electron .",
-    "dist": "vite build && electron-builder"
+    "dist": "vite build && node scripts/clean-old-dist.cjs && electron-builder --win --config electron-builder.config.cjs && node scripts/copy-latest.cjs"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.1.4",
     "electron": "^33.2.0",
+    "electron-builder": "^26.0.12",
     "vite": "^5.4.10"
   },
   "dependencies": {

@@ -12,7 +12,9 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist',
-    emptyOutDir: true
+    // 关掉构建前清空：某些环境（含本项目所在的沙箱）会拦截批量删除导致构建失败。
+    // 需要干净产物时先手动删一次 dist 目录再跑 npm run build。
+    emptyOutDir: false
   },
   server: {
     port: 5178

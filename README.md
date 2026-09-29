@@ -46,6 +46,12 @@ npm start        # 启动
 
 嫌麻烦也可以直接**双击 `start.bat`**，它会自动判断要不要先构建。
 
+想自己打个 Windows 安装包？
+
+```bash
+pnpm run dist    # 产物在 release/BatteryGuard-Setup-x.x.x.exe
+```
+
 ---
 
 ## 常见问题
@@ -87,7 +93,7 @@ npx electron . --screenshot docs/shot.png   # 截一张主界面图
 
 - [ ] 联想 / 华硕 / 戴尔等机型的硬件级限充适配
 - [ ] 电池健康度历史曲线
-- [ ] 打包成安装包
+- [ ] 自动更新
 
 ## 许可证
 

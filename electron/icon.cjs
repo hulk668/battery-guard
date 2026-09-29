@@ -101,4 +101,4 @@ function batteryIconBuffer(percent, charging) {
   return encodePng(S, S, px)
 }
 
-module.exports = { batteryIconBuffer }
+module.exports = { batteryIconBuffer, encodePng }

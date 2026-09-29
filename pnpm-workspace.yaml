@@ -1,0 +1,8 @@
+nodeLinker: hoisted
+allowBuilds:
+  electron: false
+  electron-winstaller: false
+  esbuild: false
+  koffi: false
+overrides:
+  "@electron/get": ^3.1.0
